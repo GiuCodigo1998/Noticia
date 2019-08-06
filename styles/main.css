@@ -23,7 +23,30 @@ h6 {
     font-family: 'Lato', sans-serif;
 }
 
+h2 {
+    font-size: 34px;
+}
 
+h3 {
+font-size: 16px;
+}
+
+.btn-social {
+    width: 26px;
+    height: 26px;
+    border: 2px solid white;
+    display: inline-block;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 100%;
+}
+
+/* .time-social li{
+    width: 26px;
+    height: 26px;
+    border: solid 2px #ffffff;
+    border-radius: 100%; 
+} */
 
 a {
     text-decoration: none;
@@ -51,13 +74,13 @@ a {
     align-items: center;
 }
 
-.p-relative{
+/* .p-relative{
     position: relative;
 }
 
 .p-absolute{
     position: absolute;
-}
+} */
 
 
 
@@ -136,6 +159,62 @@ header li {
 /*
 MAIN
 */
+
+main .container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main article {
+    position: relative;
+    background-color: aqua;
+}
+
+main .text {
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+main strong {
+    font-size: 32px;
+}
+
+main .time-social {
+    margin-top: 20px;
+}
+
+main .n_1 {
+    padding: 17px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .n_1 li {
+    margin-left: 12px;
+}
+
+main .n_1 h3 {
+    font-size: 26px;
+    padding-right: 60px;
+}
+
+main .n_3 {
+    flex-direction: column;
+}
+
+main .n_3 .text {
+    align-items: flex-end;
+}
+
+main .n_3 .a-ul{
+
+    flex-direction: column;
+}
 
 
 
