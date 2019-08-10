@@ -23,6 +23,10 @@ h6 {
     font-family: 'Lato', sans-serif;
 }
 
+time {
+    font-size: 11px;
+}
+
 h2 {
     font-size: 34px;
 }
@@ -41,12 +45,14 @@ font-size: 16px;
     border-radius: 100%;
 }
 
-/* .time-social li{
+/* 
+.time-social li{
     width: 26px;
     height: 26px;
     border: solid 2px #ffffff;
     border-radius: 100%; 
-} */
+} 
+*/
 
 a {
     text-decoration: none;
@@ -160,6 +166,10 @@ header li {
 MAIN
 */
 
+main .news {
+    margin-bottom: 24px;
+}
+
 main .container {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -184,7 +194,7 @@ main strong {
     font-size: 32px;
 }
 
-main .time-social {
+main .news .time-social {
     margin-top: 20px;
 }
 
@@ -203,8 +213,14 @@ main .n_1 h3 {
     padding-right: 60px;
 }
 
+
+
 main .n_3 {
     flex-direction: column;
+}
+
+main .n_3 h3 {
+    padding-bottom: 9px;
 }
 
 main .n_3 .text {
@@ -212,11 +228,36 @@ main .n_3 .text {
 }
 
 main .n_3 .a-ul{
-
     flex-direction: column;
+    height: 100%;
+    align-items: flex-end;
 }
 
+main .n_3 li{
+    margin-left: 12px;
+}
 
+main .box-actulidad {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+main .box-actulidad article {
+    margin-bottom: 20px;
+}
+
+main .box-actulidad article:nth-child(odd) {
+    margin-right: 20px;
+}
+
+main .actualidad h2{
+    color: #7b3fb6;
+    font-size: 28px;
+    margin-bottom: 14px;
+}
+
+main .text
 
 
 /*
