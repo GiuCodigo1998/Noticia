@@ -37,6 +37,7 @@ h1 {
 h2 {
   font-size: 28px;
   color: #009d78;
+  font-weight: bold;
 }
 
 h3 {
@@ -144,7 +145,6 @@ MAIN
   height: 41px;
   align-items: center;
   justify-content: space-between;
-
   max-width: 960px;
   width: 100%;
   margin: auto;
@@ -203,6 +203,10 @@ section figure {
   background-color: #5c3667;
 }
 
+.a_social li {
+  margin-left: 12px;
+}
+
 .a_social li a {
   display: inline-block;
   width: 26px;
@@ -215,6 +219,28 @@ section figure {
   background-color: white;
   color: black;
 }
+
+
+aside h2 {
+  margin: 11px 0 9px;
+}
+
+aside article {
+  margin-bottom: 21px;
+  border-bottom: solid 2px #bdbdbd;
+}
+
+aside .a_social {
+  margin: 9px 0 7px;
+  padding: 0;
+}
+
+aside p {
+  padding-bottom: 19px;
+  border-block-end-color: #000000;
+}
+
+
 
 /*
 FOOTER
