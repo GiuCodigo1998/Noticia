@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>El Veraz</title>
+  <title>Home_ELVERAZ</title>
+
   <link rel="stylesheet" href="./styles/reset.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.css">
@@ -13,54 +14,40 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div>
+    <!--HEADER-->
     <header>
-      <div class="container">
-        <div class="header-left">
-          <strong>
-            <a class="logo" href="#">ELVERAZ</a>
-          </strong>
-          <nav class="nav-main">
-            <ul>
-              <li>
-                <a href="">Politica</a>
-              </li>
-              <li>
-                <a href="">Deporte</a>
-              </li>
-              <li>
-                <a href="">Espectaculo</a>
-              </li>
-              <li>
-                <a href="">Tecnologia</a>
-              </li>
-            </ul>
-          </nav>
+      <div class="container d-flex_jc-sbetween ai-center">
+        <div class="header_nav d-flex_jc-sbetween ">
+          <strong><a class="logo" href="">ELVERAZ</a></strong>
+          <ul class="d-flex ai-center">
+            <li>Politica</li>
+            <li>Deporte</li>
+            <li>Espectaculo</li>
+            <li>Tecnologia</li>
+          </ul>
         </div>
-        <ul class="list-share">
-          <li>
-            <i class="fas fa-share-alt"></i>
-          </li>
-          <li>
-            <i class="fas fa-search"></i>
-          </li>
+        <ul class="d-flex">
+          <li><i class="fas fa-share-alt"></i></li>
+          <li><i class="fas fa-search"></i></li>
         </ul>
       </div>
     </header>
+
+    <!--MAIN-->
     <main>
       <div class="container">
-        <section class="coverpage">
-          <article class="post post-one">
-            <figure>
-              <img src="https://picsum.photos/470/340" alt="">
-            </figure>
-            <div class="text">
-              <h2>Politica</h2>
+        <section class="news d-flex_jc-sbetween">
+          <!--Noticia 1-->
+          <article>
+            <figure><img src="https://picsum.photos/470/340" alt=""></figure>
+            <div class="text n_1 d-flex">
+              <strong>Politica</strong>
               <div>
                 <h3>Salvador del Solar es el nuevo presidente del Consejo de Ministros</h3>
-                <div class="time-social">
+                <div class="time-social d-flex_jc-sbetween">
                   <time>Hace 3 horas</time>
-                  <ul>
+                  <ul class="d-flex">
                     <li>
                       <a class="btn-social btn-social-fb" href="">
                         <i class="fab fa-facebook-f"></i>
@@ -76,12 +63,11 @@
               </div>
             </div>
           </article>
-          <article class="post post-two">
-            <figure>
-              <img src="https://picsum.photos/143/340" alt="">
-            </figure>
+          <!--Noticia 2-->
+          <article>
+            <figure><img src="https://picsum.photos/140/340" alt=""></figure>
             <div class="text">
-              <h4 class="label"><a href="#">Politica</a></h4>
+              <a href="">Politica</a>
               <div>
                 <h3>Las protestas cada vez son mayores</h3>
                 <div class="time-social">
@@ -102,105 +88,109 @@
               </div>
             </div>
           </article>
-          <div class="articles">
-            <article class="post post-three">
-              <figure>
-                <img src="https://picsum.photos/306/100" alt="">
-              </figure>
-              <div class="text">
-                <h4 class="label">
-                  <a href="#">Politica</a>
-                </h4>
+
+          <!--Noticias 3-->
+          <!--Un toq mas radical -> se juntara: a y social , h3 y time; 
+                    XD luego se procedera con lo establecido anteriormente -> time y social, h3, a;-->
+          <div class="n_3 d-flex_jc-sbetween">
+
+            <!--3.1-->
+            <article>
+              <figure><img src="https://picsum.photos/300/100" alt=""></figure>
+              <div class="text d-flex_jc-sbetween">
                 <div>
                   <h3>Las chicas campeonas otra vez</h3>
-                  <div class="time-social">
-                    <time>Hace 3 horas</time>
-                    <ul>
-                      <li>
-                        <a class="btn-social btn-social-fb" href="">
-                          <i class="fab fa-facebook-f"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="btn-social btn-social-tw" href="#">
-                          <i class="fab fa-twitter"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                  <time>Hace 3 horas</time>
+                </div>
+                <div class="a-ul d-flex_jc-sbetween">
+                  <a href="">Deporte</a>
+                  <ul class="d-flex">
+                    <li>
+                      <a class="btn-social btn-social-fb" href="">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="btn-social btn-social-tw" href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </article>
-            <article class="post post-three">
-              <figure>
-                <img src="https://picsum.photos/306/100" alt="">
-              </figure>
-              <div class="text">
-                <h4 class="label">
-                  <a href="#">Politica</a>
-                </h4>
+
+            <!--3.2-->
+            <article>
+              <figure><img src="https://picsum.photos/300/100" alt=""></figure>
+              <div class="text d-flex">
                 <div>
                   <h3>Los cuatro famosos afinaron su pulso para ganar los 'Aros flotantes'</h3>
-                  <div class="time-social">
-                    <time>Hace 3 horas</time>
-                    <ul>
-                      <li>
-                        <a class="btn-social btn-social-fb" href="">
-                          <i class="fab fa-facebook-f"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="btn-social btn-social-tw" href="#">
-                          <i class="fab fa-twitter"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                  <time>Hace 3 horas</time>
+                </div>
+                <div class="a-ul d-flex_jc-sbetween">
+                  <a href="">Espectaculo</a>
+                  <ul class="d-flex">
+                    <li>
+                      <a class="btn-social btn-social-fb" href="">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="btn-social btn-social-tw" href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </article>
-            <article class="post post-three">
-              <figure>
-                <img src="https://picsum.photos/306/100" alt="">
-              </figure>
-              <div class="text">
-                <h4 class="label">
-                  <a href="#">Politica</a>
-                </h4>
+
+            <!--3.3-->
+            <article>
+              <figure><img src="https://picsum.photos/300/100" alt=""></figure>
+              <div class="text d-flex">
                 <div>
                   <h3>"Facebook Down": las teorías que explican la caída mundial de la red social</h3>
-                  <div class="time-social">
-                    <time>Hace 3 horas</time>
-                    <ul>
-                      <li>
-                        <a class="btn-social btn-social-fb" href="">
-                          <i class="fab fa-facebook-f"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="btn-social btn-social-tw" href="#">
-                          <i class="fab fa-twitter"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                  <time>Hace 3 horas</time>
+                </div>
+                <div class="a-ul d-flex_jc-sbetween">
+                  <a href="">Tecnologia</a>
+                  <ul class="d-flex">
+                    <li>
+                      <a class="btn-social btn-social-fb" href="">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="btn-social btn-social-tw" href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </article>
           </div>
         </section>
-        <section class="post-gral">
-          <section class="present">
-            <h2 class="title">Actualidad</h2>
-            <div class="items">
-              <article class="post post-four">
-                <figure>
-                  <img src="https://picsum.photos/306/160" alt="">
-                </figure>
+
+        <!--Caja para meter flex a "Actualidad y Mas leidas"-->
+        <div class="d-flex act_mas">
+
+          <!--Seccion de ACTUALIDAD!!!!!!!-->
+          <section class="actualidad">
+            <h2>Actualidad</h2>
+            <div class="box-actulidad">
+              <!--Caja contenedora de los 8 articulos-->
+
+              <!--a_1-->
+              <article>
+                <figure><img src="https://picsum.photos/306/160" alt=""></figure>
                 <div class="text">
-                  <h4 class="label"><a href="#">Politica</a></h4>
+                  <a href="">Politica</a>
                   <div>
-                    <h3>Las protestas cada vez son mayores</h3>
+                    <h3>Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de
+                      Justicia</h3>
                     <div class="time-social">
                       <time>Hace 3 horas</time>
                       <ul>
@@ -219,14 +209,16 @@
                   </div>
                 </div>
               </article>
-              <article class="post post-four">
-                <figure>
-                  <img src="https://picsum.photos/306/160" alt="">
-                </figure>
+
+              <!--a_2-->
+              <article>
+                <figure><img src="https://picsum.photos/306/160" alt=""></figure>
                 <div class="text">
-                  <h4 class="label"><a href="#">Politica</a></h4>
+                  <a href="">Espectaculo</a>
                   <div>
-                    <h3>Las protestas cada vez son mayores</h3>
+                    <h3>Mario Irivarren a Rafael Cardozo: “Atrasaste a Loco Vargas con la
+                      ‘vengadora’”
+                    </h3>
                     <div class="time-social">
                       <time>Hace 3 horas</time>
                       <ul>
@@ -245,14 +237,15 @@
                   </div>
                 </div>
               </article>
-              <article class="post post-four">
-                <figure>
-                  <img src="https://picsum.photos/306/160" alt="">
-                </figure>
+
+              <!--a_3-->
+              <article>
+                <figure><img src="https://picsum.photos/306/160" alt=""></figure>
                 <div class="text">
-                  <h4 class="label"><a href="#">Politica</a></h4>
+                  <a href="">Politica</a>
                   <div>
-                    <h3>Las protestas cada vez son mayores</h3>
+                    <h3>Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de
+                      Justicia</h3>
                     <div class="time-social">
                       <time>Hace 3 horas</time>
                       <ul>
@@ -271,14 +264,16 @@
                   </div>
                 </div>
               </article>
-              <article class="post post-four">
-                <figure>
-                  <img src="https://picsum.photos/306/160" alt="">
-                </figure>
+
+              <!--a_4-->
+              <article>
+                <figure><img src="https://picsum.photos/306/160" alt=""></figure>
                 <div class="text">
-                  <h4 class="label"><a href="#">Politica</a></h4>
+                  <a href="">Tecnologia</a>
                   <div>
-                    <h3>Las protestas cada vez son mayores</h3>
+                    <h3>Mario Irivarren a Rafael Cardozo: “Atrasaste a Loco Vargas con la
+                      ‘vengadora’”
+                    </h3>
                     <div class="time-social">
                       <time>Hace 3 horas</time>
                       <ul>
@@ -297,14 +292,15 @@
                   </div>
                 </div>
               </article>
-              <article class="post post-four">
-                <figure>
-                  <img src="https://picsum.photos/306/160" alt="">
-                </figure>
+
+              <!--a_5-->
+              <article>
+                <figure><img src="https://picsum.photos/306/160" alt=""></figure>
                 <div class="text">
-                  <h4 class="label"><a href="#">Politica</a></h4>
+                  <a href="">Politica</a>
                   <div>
-                    <h3>Las protestas cada vez son mayores</h3>
+                    <h3>Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de
+                      Justicia</h3>
                     <div class="time-social">
                       <time>Hace 3 horas</time>
                       <ul>
@@ -323,14 +319,16 @@
                   </div>
                 </div>
               </article>
-              <article class="post post-four">
-                <figure>
-                  <img src="https://picsum.photos/306/160" alt="">
-                </figure>
+
+              <!--a_6-->
+              <article>
+                <figure><img src="https://picsum.photos/306/160" alt=""></figure>
                 <div class="text">
-                  <h4 class="label"><a href="#">Politica</a></h4>
+                  <a href="">Espectaculo</a>
                   <div>
-                    <h3>Las protestas cada vez son mayores</h3>
+                    <h3>Mario Irivarren a Rafael Cardozo: “Atrasaste a Loco Vargas con la
+                      ‘vengadora’”
+                    </h3>
                     <div class="time-social">
                       <time>Hace 3 horas</time>
                       <ul>
@@ -349,14 +347,15 @@
                   </div>
                 </div>
               </article>
-              <article class="post post-four">
-                <figure>
-                  <img src="https://picsum.photos/306/160" alt="">
-                </figure>
+
+              <!--a_7-->
+              <article>
+                <figure><img src="https://picsum.photos/306/160" alt=""></figure>
                 <div class="text">
-                  <h4 class="label"><a href="#">Politica</a></h4>
+                  <a href="">Politica</a>
                   <div>
-                    <h3>Las protestas cada vez son mayores</h3>
+                    <h3>Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de
+                      Justicia</h3>
                     <div class="time-social">
                       <time>Hace 3 horas</time>
                       <ul>
@@ -375,14 +374,16 @@
                   </div>
                 </div>
               </article>
-              <article class="post post-four">
-                <figure>
-                  <img src="https://picsum.photos/306/160" alt="">
-                </figure>
+
+              <!--a_8-->
+              <article>
+                <figure><img src="https://picsum.photos/306/160" alt=""></figure>
                 <div class="text">
-                  <h4 class="label"><a href="#">Politica</a></h4>
+                  <a href="">Tecnologia</a>
                   <div>
-                    <h3>Las protestas cada vez son mayores</h3>
+                    <h3>Mario Irivarren a Rafael Cardozo: “Atrasaste a Loco Vargas con la
+                      ‘vengadora’”
+                    </h3>
                     <div class="time-social">
                       <time>Hace 3 horas</time>
                       <ul>
@@ -402,21 +403,25 @@
                 </div>
               </article>
             </div>
-            <div class="ta-center">
-              <a class="btn btn-primary" href="">Ver mas</a>
-            </div>
+
+            <!--Boton que va en el medio "VER MAS" (De actualidad)-->
+            <div class="btn-center"><a class="btn btn-actualidad" href="">Ver mas</a></div>
           </section>
-          <section class="most-read">
-            <h2 class="title">Mas leidas</h2>
-            <div class="items">
-              <article class="post post-four">
-                <figure>
-                  <img src="https://picsum.photos/306/160" alt="">
-                </figure>
+
+          <!--Seccion de MAS LEIDAS!!!!!!!-->
+          <section class="mas_leidas">
+            <h2>Mas leidas</h2>
+            <div class="box-mas">
+              <!--Caja contenedora de los 4 articulos-->
+              <!--RECUERDA CAMBIAR LA FOTO DE ANCHO 307 A UN ANCHO DE @306@-->
+              <!--m_1-->
+              <article>
+                <figure><img src="https://picsum.photos/306/160" alt=""></figure>
                 <div class="text">
-                  <h4 class="label"><a href="#">Politica</a></h4>
+                  <a href="">Politica</a>
                   <div>
-                    <h3>Las protestas cada vez son mayores</h3>
+                    <h3>Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de
+                      Justicia</h3>
                     <div class="time-social">
                       <time>Hace 3 horas</time>
                       <ul>
@@ -435,14 +440,16 @@
                   </div>
                 </div>
               </article>
-              <article class="post post-four">
-                <figure>
-                  <img src="https://picsum.photos/306/160" alt="">
-                </figure>
+
+              <!--m_2-->
+              <article>
+                <figure><img src="https://picsum.photos/306/160" alt=""></figure>
                 <div class="text">
-                  <h4 class="label"><a href="#">Politica</a></h4>
+                  <a href="">Espectaculo</a>
                   <div>
-                    <h3>Las protestas cada vez son mayores</h3>
+                    <h3>Mario Irivarren a Rafael Cardozo: “Atrasaste a Loco Vargas con la
+                      ‘vengadora’”
+                    </h3>
                     <div class="time-social">
                       <time>Hace 3 horas</time>
                       <ul>
@@ -461,14 +468,15 @@
                   </div>
                 </div>
               </article>
-              <article class="post post-four">
-                <figure>
-                  <img src="https://picsum.photos/306/160" alt="">
-                </figure>
+
+              <!--m_3-->
+              <article>
+                <figure><img src="https://picsum.photos/306/160" alt=""></figure>
                 <div class="text">
-                  <h4 class="label"><a href="#">Politica</a></h4>
+                  <a href="">Politica</a>
                   <div>
-                    <h3>Las protestas cada vez son mayores</h3>
+                    <h3>Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de
+                      Justicia</h3>
                     <div class="time-social">
                       <time>Hace 3 horas</time>
                       <ul>
@@ -487,14 +495,16 @@
                   </div>
                 </div>
               </article>
-              <article class="post post-four">
-                <figure>
-                  <img src="https://picsum.photos/306/160" alt="">
-                </figure>
+
+              <!--m_4-->
+              <article>
+                <figure><img src="https://picsum.photos/306/160" alt=""></figure>
                 <div class="text">
-                  <h4 class="label"><a href="#">Politica</a></h4>
+                  <a href="">Tecnologia</a>
                   <div>
-                    <h3>Las protestas cada vez son mayores</h3>
+                    <h3>Mario Irivarren a Rafael Cardozo: “Atrasaste a Loco Vargas con la
+                      ‘vengadora’”
+                    </h3>
                     <div class="time-social">
                       <time>Hace 3 horas</time>
                       <ul>
@@ -513,18 +523,21 @@
                   </div>
                 </div>
               </article>
-            </div>
-            <div class="ta-center">
-              <a class="btn btn-secondary" href="">Ver mas</a>
-            </div>
+
+              <!--Boton que va en el medio "VER MAS" (De Mas leidas)-->
+              <div class="btn-center"><a class="btn btn-mas_leidas" href="">Ver mas</a></div>
           </section>
-        </section>
+
+        </div>
       </div>
     </main>
+
+
+    <!--FOOTER-->
     <footer>
-      <div class="container">
-        <h2>ELVERAZ</h2>
-        <p>Todos los derechos reservados  | Copyright 2019</p>
+      <div class="container d-flex_jc-sbetween ai-center">
+        <strong><a href="">ELVERAZ</a></strong>
+        <small>Todos los derechos reservados | Copyright 2019</small>
       </div>
     </footer>
   </div>
